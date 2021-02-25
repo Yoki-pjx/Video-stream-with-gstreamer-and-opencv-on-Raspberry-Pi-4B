@@ -8,11 +8,11 @@
  
 // Include gstreamer library
 #include <gst/gst.h>
-#include <gst/app/app.h>
- 
+#include <gst/app/gstappsink.h>
+
 // Include OpenCV library
-#include <opencv.hpp>
- 
+#include <opencv2/opencv.hpp>
+
 // Share frame between main loop and gstreamer callback
 std::atomic<cv::Mat*> atomicFrame;
  
